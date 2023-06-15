@@ -2,7 +2,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:task/core/repository/sign_in_repo/sign_in_repo_imple.dart';
-import 'package:task/modules/home_screen/view/home_screen.dart';
+import 'package:task/modules/bottom_nav_screen/view/bottom_nav_sccreen.dart';
 
 part 'signin_state.dart';
 
@@ -34,7 +34,7 @@ class SigninCubit extends Cubit<SigninState> {
         Navigator.pushAndRemoveUntil(
           context,
           MaterialPageRoute(
-            builder: (context) => const HomeScreen(),
+            builder: (context) => const BottomNavScreen(),
           ),
           (route) => false,
         );

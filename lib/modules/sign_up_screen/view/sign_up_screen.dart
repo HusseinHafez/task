@@ -11,7 +11,6 @@ import 'package:task/core/utils/app_fonts.dart';
 import 'package:task/core/utils/service_locator.dart';
 import 'package:task/modules/sign_up_screen/view/controller/signup_cubit.dart';
 
-import '../../../core/utils/app_constant.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -26,7 +25,6 @@ class SignUpScreen extends StatelessWidget {
           return GestureDetector(
             onTap: () => FocusScope.of(context).unfocus(),
             child: Scaffold(
-              resizeToAvoidBottomInset: AppConstants.resizeToAvoidBottomInset,
               body: SafeArea(
                 child: SingleChildScrollView(
                   padding: const EdgeInsets.only(

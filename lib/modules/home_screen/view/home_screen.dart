@@ -123,16 +123,34 @@ class HomeScreen extends StatelessWidget {
                       SizedBox(
                         height: 10.h,
                       ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: AppColors.blueColor,
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                        height: 150.h,
-                        child: Image.asset(
-                          AppImages.trndingImage,
-                          fit: BoxFit.cover,
-                        ),
+                      Stack(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: AppColors.blueColor,
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                            height: 150.h,
+                            child: Image.asset(
+                              AppImages.trndingImage,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          Positioned(
+                            right: 15,
+                            bottom: 15,
+                            child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.whiteColor,
+                                
+                              ),
+                              onPressed: (){}, child: Text('learn more',style: TextStyle(
+                              color: AppColors.blueColor,
+                              fontSize: 10.sp,
+                              fontFamily: AppFonts.helveticaNeueFont,
+                            ),)),
+                          )
+                        ],
                       ),
                       SizedBox(
                         height: 10.h,

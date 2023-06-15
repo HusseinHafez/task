@@ -23,10 +23,8 @@ dependencies:
   flutter_screenutil: null
   flutter_textfield_validation: null
   fluttertoast: null
-  font_awesome_flutter: null
   get_it: null
-  iconly: null
-
+  iconly:
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:

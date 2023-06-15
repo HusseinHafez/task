@@ -2,7 +2,6 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:task/core/utils/app_constant.dart';
 import 'package:task/core/utils/app_images.dart';
 import 'package:task/modules/sign_in_screen/controller/signin_cubit.dart';
 import 'package:task/modules/sign_up_screen/view/sign_up_screen.dart';
@@ -28,7 +27,6 @@ class SignInScreen extends StatelessWidget {
           return GestureDetector(
             onTap: () => FocusScope.of(context).unfocus(),
             child: Scaffold(
-              resizeToAvoidBottomInset: AppConstants.resizeToAvoidBottomInset,
               body: SafeArea(
                 child: SingleChildScrollView(
                   padding: const EdgeInsets.only(bottom: 14),

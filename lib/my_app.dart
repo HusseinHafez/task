@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task/core/utils/app_constant.dart';
-import 'package:task/modules/bottom_nav_screen/view/bottom_nav_sccreen.dart';
-import 'package:task/modules/home_screen/view/home_screen.dart';
+import 'package:task/modules/sign_in_screen/view/sign_in_screen.dart';
 
 class MyApp extends StatelessWidget {
   static final navigatorKey=GlobalKey<NavigatorState>();
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return const MaterialApp(
             debugShowCheckedModeBanner: AppConstants.showDebugBanner,
-            home: BottomNavScreen(),
+            home: SignInScreen(),
           );
         });
   }
